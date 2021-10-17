@@ -4,3 +4,6 @@ exports.get=async () =>{
 return await CategoryServer.get();
 }
 
+exports.GetInfoShop=async (id)=>{
+    return await CategoryServer.GetInfoShop(id);
+    }

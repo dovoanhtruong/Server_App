@@ -11,4 +11,10 @@ router.get('/', async function(req, res, next) {
 });
 
 
+router.get("/:id",async function(req, res, next) {
+  const{params:{id}}=req
+  const InfoShop=await Controller_Category.GetInfoShop(id)
+  res.json({ infoShop: InfoShop});
+});
+
   module.exports = router;
