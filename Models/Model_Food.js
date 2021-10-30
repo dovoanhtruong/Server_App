@@ -8,6 +8,7 @@ const foodSchema =new Schema({
     imageimagefood: {type: String},
     idcategory: {type: String},
     idshop: {type: String},
+    notefood: {type: String},
     pricefood: {type: Number},
     status: {type: Boolean}
 })
